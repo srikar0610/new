@@ -1,5 +1,5 @@
 ---
- - hosts: slave
+ - hosts: localhost
    become: true
    tasks:
      - name: creating file
