@@ -4,5 +4,5 @@
    tasks:
      - name: creating file
        file:
-         path: /home/slave/new
+         path: /home/jagan/f1
          state: touch
