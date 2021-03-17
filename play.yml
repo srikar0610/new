@@ -5,5 +5,5 @@
    tasks:
      - name: creating file
        file:
-         path: /home/jagan/f1
+         path: /home/node2/f1
          state: touch
