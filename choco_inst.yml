@@ -3,6 +3,6 @@
    connection: winrm
    tasks:
      - name: choco
-       win_shell:
+       win_command:
          name: chocolatey
          state: installed
