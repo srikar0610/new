@@ -1,5 +1,5 @@
 ---
- - hosts: win
+ - hosts: win, wintell
    connection: winrm
    tasks:
      - win_ping:
