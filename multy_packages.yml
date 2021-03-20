@@ -1,0 +1,13 @@
+---
+ - hosts: win
+   connection: winrm
+   tasks:
+     - name: Install multiple packages
+       win_chocolatey:
+         name:
+         - procexp
+         - putty
+         - windirstat
+        state: present
+
+     
