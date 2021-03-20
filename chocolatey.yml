@@ -1,0 +1,8 @@
+---
+ - hosts: win
+   connection: winrm
+   tasks:
+     - name: install chocolatey
+       win_update:
+         name: chocolatey
+         state: installed
