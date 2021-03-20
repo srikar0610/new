@@ -1,0 +1,8 @@
+---
+ - hosts: win
+   connection: winrm
+   tasks:
+     - name: choco
+       win_shell:
+         name: chocolatey
+         state: installed
