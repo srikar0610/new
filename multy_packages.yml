@@ -8,6 +8,6 @@
          - procexp
          - putty
          - windirstat
-        state: present
+         state: present
 
      
