@@ -1,12 +1,12 @@
 ---
  - hosts: win
-    connection: winrm
-    tasks: 
-      - name: Install all security, critical, and rollup updates
-        win_updates:
-        category_names:
-         - SecurityUpdates
-         - CriticalUpdates
-         - UpdateRollups
+   connection: winrm
+   tasks: 
+     - name: Install all security, critical, and rollup updates
+       win_updates:
+       category_names:
+        - SecurityUpdates
+        - CriticalUpdates
+        - UpdateRollups
   
  
