@@ -6,6 +6,11 @@
        win_file:
          path: C:\Users\Administrator\Desktop\praveen
          state: directory
+         
+     - name: create file
+       win_file:
+         path: C:\Users\Administrator\Desktop\praveen\new
+         state: touch
 
 
 
