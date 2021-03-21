@@ -1,5 +1,6 @@
 ---
  - hosts: win
+   connection: winrm
    tasks:
      - name: copy file from win to cent
        fetch:
