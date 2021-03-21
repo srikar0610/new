@@ -4,5 +4,5 @@
    tasks:
      - name: create a file
        win_copy:
-         src: /root/stick
+         src: /home/praveen/stick
          dest: C:\Users\Administrator\Desktop\praveen\
