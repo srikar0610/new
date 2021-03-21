@@ -4,6 +4,6 @@
    tasks:
      - name: copy file from win to cent
        fetch:
-         src: C:\Users\Administrator\Desktop\praveen\top.txt
+         src: C:\Users\Administrator\Desktop\praveen\new
          dest: /home/praveen/
          flat: yes
