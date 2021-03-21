@@ -1,0 +1,11 @@
+---
+ - hosts: win
+   connection: winrm
+   tasks:
+     - name: Create directory structure
+       win_file:
+         path: C:\Users\Administrator\Desktop\praveen
+         state: directory
+
+
+
