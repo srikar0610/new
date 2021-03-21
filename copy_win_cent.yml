@@ -7,3 +7,4 @@
          src: C:\Users\Administrator\Desktop\praveen\new
          dest: /home/praveen/
          flat: yes
+         remote_src: yes
