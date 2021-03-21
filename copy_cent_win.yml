@@ -1,0 +1,8 @@
+---
+ - hosts: win
+   connection: winrm
+   tasks:
+     - name: create a file
+       win_copy:
+         src: /root/stick
+         dest: C:\Users\Administrator\Desktop\praveen\
