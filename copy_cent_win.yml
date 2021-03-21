@@ -6,3 +6,4 @@
        win_copy:
          src: /home/praveen/stick
          dest: C:\Users\Administrator\Desktop\praveen\
+         remote_src: yes
