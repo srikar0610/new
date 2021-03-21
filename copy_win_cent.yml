@@ -2,6 +2,7 @@
  - hosts: win
    tasks:
      - name: copy file from win to cent
-       win_copy:
-         src: C:\Users\Administrator\Desktop\praveen\new
+       fetch:
+         src: C:\Users\Administrator\Desktop\praveen\top
          dest: /home/praveen/
+         flat: yes
