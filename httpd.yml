@@ -9,4 +9,4 @@
      - name: starts service
        service:
          name: httpd
-         state: started
+         state: stop
