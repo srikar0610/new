@@ -1,5 +1,5 @@
 ---
- - hosts: win
+ - hosts: wintell
    connection: winrm
    tasks: 
      - name: Install all security, critical, and rollup updates
@@ -8,10 +8,10 @@
            - SecurityUpdates
            - CriticalUpdates
            - UpdateRollups             
-       #register: update_result
-     #- name: Reboot host if required
-      # win_reboot:
-      # when: update_result.reboot_required
+       register: update_result
+     - name: Reboot host if required
+       win_reboot:
+       when: update_result.reboot_required
      
   
  
