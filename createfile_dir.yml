@@ -4,12 +4,12 @@
    tasks:
      - name: Create directory structure
        win_file:
-         path: C:\Users\Administrator\Desktop\praveen
+         path: C:\Users\Administrator\Desktop\bhargav
          state: directory
          
      - name: create file
        win_file:
-         path: C:\Users\Administrator\Desktop\praveen\new
+         path: C:\Users\Administrator\Desktop\praveen\prasad
          state: touch
 
 
