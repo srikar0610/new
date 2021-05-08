@@ -9,7 +9,7 @@
          
      - name: create file
        win_file:
-         path: C:\Users\Administrator\Desktop\praveen\prasad
+         path: C:\Users\Administrator\Desktop\bhargav\prasad
          state: touch
 
 
