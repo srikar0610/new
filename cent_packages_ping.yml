@@ -1,5 +1,5 @@
 ---
- - hosts: hosta
+ - hosts: slave
    #become: true
    tasks:
      - ping:
