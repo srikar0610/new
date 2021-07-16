@@ -1,0 +1,8 @@
+---
+ - hosts: slave
+   become: true
+   tasks:
+     - file:
+         path: "/home/slave/file"
+         state: touch
+         mode: 0777
