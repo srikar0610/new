@@ -3,6 +3,6 @@
    become: true
    tasks:
      - file:
-         path: "/home/slave/file"
+         path: "/home/slave/sai"
          state: touch
-         mode: 0777
+         mode: 0775
