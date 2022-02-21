@@ -1,2 +1,2 @@
-[webserver]
+[slave1]
 172.31.32.184 ansible_user=slave1
