@@ -1,8 +1,8 @@
 ---
- - hosts: slave
+ - hosts: slave1
    become: true
    tasks:
      - file:
-         path: "/home/slave/sai"
+         path: "/home/arjun/karthik"
          state: touch
-         mode: 0775
+         mode: 0777
