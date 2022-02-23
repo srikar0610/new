@@ -3,6 +3,6 @@
    become: true
    tasks:
      - file:
-         path: "/home/slave1/karthik"
-         state: touch
+         path: "/home/slave1/ravi"
+         state: directory
          mode: 0777
