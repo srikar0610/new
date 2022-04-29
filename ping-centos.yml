@@ -1,5 +1,5 @@
 ---
- - hosts: localhost
+ - hosts: slave
    become: true
    tasks:
      - name: ping
