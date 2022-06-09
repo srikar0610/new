@@ -1,0 +1,8 @@
+---
+ - hosts: mysql_db
+   become: true
+   tasks:
+     - name: install java
+       yum: 
+         name: java
+         state: installed
