@@ -1,5 +1,5 @@
 ---
- - hosts: slavemysql
+ - hosts: mysql_db
    become: true
    tasks:
      - name: install java
