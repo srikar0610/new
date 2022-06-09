@@ -2,7 +2,7 @@
  - hosts: mysql_db
    become: true
    tasks:
-     - name: install java
+     - name: install git
        yum: 
-         name: java
+         name: git
          state: installed
