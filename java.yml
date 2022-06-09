@@ -1,0 +1,8 @@
+---
+ - hosts: slavemysql
+   become: true
+   tasks:
+     - name: install java
+       yum: 
+         name: java
+         state: installed
