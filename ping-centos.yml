@@ -1,5 +1,5 @@
 ---
- - hosts: slave
+ - hosts: mysql_db
    become: true
    tasks:
      - name: ping
