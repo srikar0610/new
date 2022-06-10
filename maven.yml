@@ -1,0 +1,8 @@
+---
+ - hosts: mysql_db
+   become: true
+   tasks:
+     - name: maven install
+        yum:
+          name: maven
+          state: installed
