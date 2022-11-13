@@ -5,4 +5,4 @@
      - name: choco
        win_package:
          name: chocolatey
-         state: present
+         state: installed
