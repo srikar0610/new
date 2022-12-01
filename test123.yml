@@ -1,5 +1,5 @@
 ---
- - hosts: 172.31.17.176
+ - hosts: ansible
    become: true
    tasks:
      - yum:
