@@ -4,4 +4,4 @@
    tasks:
      - yum:
          name: tree
-         state: started
+         state: installed
