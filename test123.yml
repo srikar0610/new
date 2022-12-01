@@ -1,0 +1,7 @@
+---
+ - hosts: 172.31.17.176
+   become: true
+   tasks:
+     - yum:
+         name: tree
+         state: started
