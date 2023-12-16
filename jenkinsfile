@@ -1,0 +1,38 @@
+pipeline {
+    agent any
+
+    parameters {
+        string(name: 'INSTANCE_TYPE', defaultValue: 't2.micro', description: 'Instance Type')
+        string(name: 'SECURITY_GROUP', defaultValue: 'default', description: 'Security Group')
+        string(name: 'INSTANCE_NAME', defaultValue: 'MyInstance', description: 'Instance Name')
+        string(name: 'KEYPAIR_NAME', defaultValue: 'my-keypair', description: 'Keypair Name')
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout code from GitHub
+                git 'https://github.com/your/repo.git'
+            }
+        }
+
+        stage('Ansible Deploy') {
+            steps {
+                script {
+                    // Run Ansible playbook with parameters
+                    ansiblePlaybook(
+                        colorized: true,
+                        inventory: 'path/to/your/inventory.ini',
+                        playbook: 'path/to/your/playbook.yml',
+                        extraVars: [
+                            INSTANCE_TYPE: params.INSTANCE_TYPE,
+                            SECURITY_GROUP: params.SECURITY_GROUP,
+                            INSTANCE_NAME: params.INSTANCE_NAME,
+                            KEYPAIR_NAME: params.KEYPAIR_NAME
+                        ]
+                    )
+                }
+            }
+        }
+    }
+}
