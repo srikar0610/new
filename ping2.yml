@@ -4,6 +4,6 @@
    connection: local
    tasks:
      - file:
-         path: /root/sharma
+         path: /root/india
          state: directory
          mode: '0777'
