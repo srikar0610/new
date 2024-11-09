@@ -4,6 +4,6 @@
    connection: local
    tasks:
      - file:
-         path: /root/india
+         path: /root/Saanvika
          state: directory
          mode: '0777'
