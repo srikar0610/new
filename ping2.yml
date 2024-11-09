@@ -3,4 +3,7 @@
    #become: true
    connection: local
    tasks:
-     - ping:
+     - file:
+         path: /root/sharma
+         state: directory
+         mode: '0777'
